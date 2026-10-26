@@ -1,0 +1,1 @@
+function a(n){if(n==null)return"";const r=String(n).replace(/\s+/g," ").trim();if(!r)return"";const t=r.match(/^(?:turma|t)\s*[-.:º°]*\s*0*(\d+)$/i)||r.match(/^0*(\d+)$/);return t?t[1]:r}export{a as p};
